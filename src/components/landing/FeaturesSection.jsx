@@ -1,7 +1,29 @@
-import { Wallet } from 'lucide-react';
-import React from 'react';
+import { ArrowUpCircle,Shield,Share2,CreditCard,FileText,Clock} from 'lucide-react';
 
 const FeaturesSection = ({ features }) => {
+  const renderIcon = (iconName, iconColor) => {
+    const iconProps = {
+      size: 25,
+      style: { color: iconColor }
+    };
+
+    switch (iconName) {
+      case 'cloud-upload':
+        return <ArrowUpCircle {...iconProps} />;
+      case 'shield':
+        return <Shield {...iconProps} />;
+      case 'share':
+        return <Share2 {...iconProps} />;
+      case 'credit-card':
+        return <CreditCard {...iconProps} />;
+      case 'file-text':
+        return <FileText {...iconProps} />;
+      case 'clock':
+        return <Clock {...iconProps} />;
+      default:
+        return <FileText {...iconProps} />;
+    }
+  }
   return (
     <div className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,7 +49,7 @@ const FeaturesSection = ({ features }) => {
                       style={{ color: feature.iconColor }}
                     >
                       {/* Replace Wallet with dynamic icon if available */}
-                      <Wallet />
+                      {renderIcon(feature.iconName, feature.iconColor)}
                     </div>
                     <h3 className="mt-5 text-lg font-medium text-gray-900 tracking-tight">
                       {feature.title}

@@ -1,39 +1,39 @@
 export const features = [
   {
-    iconName: "cloud-upload",
+    iconName: "",
     iconColor: "#8B5CF6",
-    title: "Secure Cloud Storage",
-    description: "Store and access your files securely from anywhere with enterprise-grade encryption."
-  },
-  {
-    iconName: "share",
-    iconColor: "#EC4899",
-    title: "Easy File Sharing",
-    description: "Share files and folders with customizable access controls and expiring links."
-  },
-  {
-    iconName: "sync",
-    iconColor: "#10B981",
-    title: "Real-time Sync",
-    description: "Automatically sync your files across all devices with instant updates."
+    title: "Easy File Upload",
+    description: "Quickly upload files of any type and size with our intuitive drag-and-drop interface."
   },
   {
     iconName: "shield",
+    iconColor: "#EC4899",
+    title: "Secure Storage",
+    description: "Your files are encrypted and stored securely in our cloud infrastructure."
+  },
+  {
+    iconName: "share",
+    iconColor: "#10B981",
+    title: "Simple Sharing",
+    description: "Share files with anyone using secure links that you control."
+  },
+  {
+    iconName: "credit-card",
     iconColor: "#F59E0B",
-    title: "Advanced Security",
-    description: "Protect your data with two-factor authentication and end-to-end encryption."
+    title: "Flexible Credits",
+    description: "Pay only for what you use with our credit-based system."
   },
   {
-    iconName: "collaborate",
+    iconName: "file-text",
     iconColor: "#3B82F6",
-    title: "Team Collaboration",
-    description: "Work together seamlessly with shared workspaces and real-time editing."
+    title: "File Management",
+    description: "Organize,preview and manage your files from andy device."
   },
   {
-    iconName: "backup",
+    iconName: "clock",
     iconColor: "#6366F1",
-    title: "Automated Backup",
-    description: "Never lose important files with scheduled backups and version history."
+    title: "Transaction History",
+    description: "Keep track of all your credit purchases and usage."
   }
 ];
 
@@ -65,7 +65,7 @@ export const pricingPlans = [
       "Advanced Security",
       "Version History"
     ],
-    cta: "Start Free Trial",
+    cta: "Go Premium",
     highlighted: true
   },
   {
@@ -80,7 +80,7 @@ export const pricingPlans = [
       "Custom Security",
       "Advanced Analytics"
     ],
-    cta: "Contact Sales",
+    cta: "Go Ultimate",
     highlighted: false
   }
 ];
@@ -90,7 +90,7 @@ export const testimonials = [
     name: "Sarah Johnson",
     role: "CTO",
     company: "TechStart Solutions",
-    image: "/testimonials/sarah.jpg",
+    image: "https://randomuser.me/api/portraits/women/32.jpg",
     quote: "CloudShare has transformed how our team collaborates. The security features and ease of use are unmatched.",
     rating: 5
   },
@@ -98,7 +98,7 @@ export const testimonials = [
     name: "Michael Chen",
     role: "Creative Director",
     company: "Design Studio Pro",
-    image: "/testimonials/michael.jpg",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
     quote: "As a creative agency, we needed a reliable solution for sharing large files. CloudShare exceeded our expectations.",
     rating: 5
   },
@@ -106,7 +106,7 @@ export const testimonials = [
     name: "Emily Rodriguez",
     role: "Project Manager",
     company: "Global Innovations",
-    image: "/testimonials/emily.jpg",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
     quote: "The real-time collaboration features have made remote work seamless for our entire team.",
     rating: 4.8
   }
