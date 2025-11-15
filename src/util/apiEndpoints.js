@@ -1,4 +1,4 @@
-const BASE_URL = "https://cloudshareapi-i395.onrender.com/api/v1.0";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080/api/v1.0";;
 
 export const apiEndpoints = {
     FETCH_FILES: `${BASE_URL}/files/my`,
@@ -13,3 +13,4 @@ export const apiEndpoints = {
     PUBLIC_FILE_VIEW: (fileId) => `${BASE_URL}/files/public/${fileId}`
 }
 
+    
