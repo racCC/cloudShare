@@ -60,6 +60,7 @@ const Upload = () => {
 
         try {
             const token = await getToken();
+            
             const response = await axios.post(apiEndpoints.UPLOAD_FILE, formData, {headers: {"Content-Type": "multipart/form-data", Authorization: `Bearer ${token}`}});
 
             if (response.data && response.data.remainingCredits !== undefined) {
